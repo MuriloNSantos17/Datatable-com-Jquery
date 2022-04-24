@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Datatable</title>
+</head>
+<body>
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+           
+        </thead>
+        <tbody>
+            <tr>
+                <td>Murilo</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Jean</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>Vinicius</td>
+                <td>18</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Tabela Estados</h1>
+    <table id="tabela-estados">
+        <thead id="thead-estados">
+           
+           
+        </thead>
+        <tbody id="body-table-estados">
+            
+        </tbody>
+    </table>
+   
+   
+    <link rel="stylesheet" href="//cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+    <script src="//cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+       
+       $(document).ready( function () {
+        $('#myTable').DataTable();
+    } );
+        
+    </script>
+
+    
+</body>
+</html>
